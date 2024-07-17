@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+
+        /* 위치지정시 사용하는 속성- left,right,top,bottom,static(기본값), relative(상대위치 박스가 나열되는 순서대로 위치가 지정 top,left만), absolute(절대위치 html화면기준으로 위치가 지정 위치값 모두적용), fixed(고정위치 html화면기준응로 위치가 지정 위치값 모두적용) */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: darkgreen;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            text-align: end;
+        }
+        .box:nth-child(2){
+            background-color: darksalmon;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+            /* 위치요소의 우선순위를 변경하는 속성1~9999 */
+            z-index: 3;
+        }
+        .box:nth-child(3){
+            background-color: hotpink;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+        }
+        .box:nth-child(4){
+            background-color: springgreen;
+            position: absolute;
+            top: 120px;
+            left: 120px;
+        }
+        .box:nth-child(5){
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+        #wrap{
+            width: 600px;
+            height: 600px;
+            background-color: cornflowerblue;
+            position: relative;
+            top: 500px;
+        }
+        .div1{
+            width: 200px;
+            height: 200px;
+            background-color: firebrick;
+            line-height: 200px;
+        }
+        .div1:nth-child(1){
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .div1:nth-child(2){
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+        .div1:nth-child(3){
+            position: absolute;
+            /* top: 400px; */
+            /* left: 400px; */
+            /* 이렇게도 표현가능 */
+            bottom: 0px;
+            right: 0px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 요소를 특정한 위치로 지정하여 배치하는 속성/ 어떻게 위치할지 결정하는 속성 -->
+
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <div class="box">box3</div>
+    <div class="box">box4</div>
+    <div class="box">box5</div>
+    <div id="wrap">
+        <div class="div1">포</div>
+        <div class="div1">지</div>
+        <div class="div1">션</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 2px solid green;
+            margin: 10px;
+            /* float: 박스를 옆으로 나열할 때 사용 none,left,right */
+            float: left;
+        }
+        .box{
+            /* clear: float와 함께 사용, float 제거할 때 사용
+            clear: left; 좌측 나열 제거
+            right; 우측 나열 제거
+            both; 양쪽 나열 제거 */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div class="box">3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+</html>

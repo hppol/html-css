@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <style>
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* 모든 css가 적용-block */
+            /* display: inline; */
+            /* inline-block: 글자와 같이 나열되는 성격을 가지고 있으나,
+            블록 요소처럼 스타일 처리가 가능 */
+            display: inline-block;
+        }
+        span{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            /* width, height, margin-top,bottom 적용되지 않음-inline */
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- display: 요소를 어떤 성격으로 보여줄지 결정하는 속성
+    block: 박스와 같이 쌓이는 성격, 화면 전체를 사용
+    div, h, p, table, ul, ol
+    inline: 글자와 같이 나열되는 성격, 내용물에 따라 폭이 결정됨
+    a, span, i, em -->
+    <div>block1</div>
+    <div>block2</div>
+    <div>block3</div>
+    <span>inline1</span>
+    <span>inline2</span>
+    <span>inline3</span>
+</body>
+</html>

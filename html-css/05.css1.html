@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+
+    <style>
+        *{
+
+        }
+        h1{
+            color: red;
+        }
+        #title{
+            color: orange;
+        }
+        .para{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- css는 head에서 <style></style> 만들어서 사용 -->
+    <!-- head에 <link href="name.css" rel="stylesheet" type="text/css">로 css 파일 불러오기-->
+
+    <!-- 전체선택자, *{} -->
+
+    <!-- 태그선택자, h1{},p{},a{},img{} 등-->
+    <h1>hello</h1>
+
+    <!-- 아이디선택자, 본문(id="name"), 스타일(#{})
+    특정한 이름을 부여, html 화면내에서 하나의 이름으로 한 번 사용 가능 -->
+    <h2 id="title">hello</h2>
+
+    <!-- 클래스선택자, 본문(class="name"), 스타일(.{}) 
+    특정한 이름을 부여, html 화면내에서 하나의 이름으로 여러 번 사용 가능-->
+    <h3 class="para">What is Lorem Ipsum?</h3>
+    <p class="para">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+</body>
+</html>

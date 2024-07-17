@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자손,후손선택자</title>
+    <style>
+        ol>li{
+            /* 자손선택자 사용시
+            ol의 자손인 li만 선택됨 */
+            background-color: darkcyan;
+        }
+        ol li{
+            /* 후손선택자 사용시
+            ol 아래있는 li 전부선택됨(menu1,2,3,4,5/list1,2,3,) */
+            color: darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        후손선택자, 자손선택자
+        후손선택자: 해당 요소의 하위 요소에 있는 특정한 요소를 모두 선택(선택자a 선택자b/띄어쓰기로 구분)
+        자손선택자: 해당 요소의 바로 밑에 위치하는 특정한 요소를 선택(선택자a>선택자b/부등호로 구분)
+     -->
+     <ol>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+        <li>menu4</li>
+        <li>menu5</li>
+     </ol>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동위선택자</title>
+    <style>
+        h1+h2{
+            /* h1 바로 뒤에 있는 h2만 선택 */
+            background-color: coral;
+        }
+        h1~h2{
+            /* h1 바로 뒤에 있는 h2를 모두 선택 */
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    동위선택자
+    동위 관계에 있는 요소중에 해당요소보다 뒤에 존재하는 특정한 요소를 선택할 때 사용
+    선택자a+선택자b: 선택자a 바로 뒤에 위치하는 선택자b를 선택
+    선택자a~선택자b: 선택자a 바로 뒤에 위치하는 선택자b를 모두 선택
+     -->
+     <h1>title1</h1>
+     <h2>title2</h2>
+     <h2>title3</h2>
+     <h2>title4</h2>
+     <h2>title5</h2>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semantic tag</title>
+    <style>
+        *{margin: 0px; padding: 0px;}
+        header{
+            width: 1000px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px auto;
+            margin-top: 100px;
+        }
+        header h1{
+            float: left;
+            line-height: 100px;
+            width: 200px;
+            text-align: center;
+            background-color: burlywood;
+        }
+        nav{
+            float: right;
+        }
+        li{
+            list-style: none;
+            line-height: 30px;
+            padding-left: 20px;
+            float: left;
+
+        }
+        #wrap{
+            width: 1000px;
+            overflow: hidden;
+            margin: 0 auto;
+            background-color: darkkhaki;
+        }
+        section{
+            width: 700px;
+            float: left;
+            overflow: hidden;
+        }
+        aside{
+            width: 280px;
+            float: right;
+            overflow: hidden;
+            background-color: lightgoldenrodyellow;
+        }
+        article{
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            background-color: antiquewhite;
+        }
+        footer{
+            width: 1000px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 10px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        header - 머리말의미, 헤더 = 로고, 네비게이션, 검색창
+        nav - 메뉴를 묶거나 메뉴를 담을때 사용
+        section - 내용물, 단락나눔, 주제별 사용 - 제목태그와 단락을 나누며 표현
+        article - 기사, 세부적인 단락나눔, 웹상의 내용을 작성
+        aside - 링크, 광고, 사이드 배치
+        footer - 웹하단, 저작권, 연락처 웹사이트의 세부정보
+     -->
+     <header>
+        <h1>logo</h1>
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+            </ul>
+        </nav>
+     </header>
+
+     <div id="wrap">
+        <section>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </article>
+            <article>
+                <h2>main article</h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h2>right aside</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+        </aside>
+     </div>
+     <footer>
+        <p>help@lipsum.com Privacy Policy · </p>
+    </footer>
+</body>
+</html>

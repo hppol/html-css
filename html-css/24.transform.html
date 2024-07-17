@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        section{
+            width: 300px;
+            height: 300px;
+            border: 5px solid;
+            margin: 100px;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: indianred;
+            text-align: center;
+            line-height: 300px;
+            font-size: 30px;
+            /* 요소의 중심기점을 변경 속성 x y(px,%,단어)
+            x- left,right,center
+            y- top, bottom, center */
+            
+        }
+        div:hover{
+            /* 특정한 위치로 이동 */
+            transform: translate(100px,100px);
+            /* x축만큼 이동 */
+            transform: translateX(100px);
+            /* y축만큼 이동 */
+            transform: translateY(100px);
+            /* 확대 축소 scaleX, scaleY */
+            transform: scale(1.5,1.5);
+            /* 회전 rotate(ndeg) 시계방향 rotateX, rotateY*/
+            transform: rotate(60deg);
+            /* 특정한 각도로 기울이기, 왜곡 각도 skewX, skewY */
+            transform: skew(45deg, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>transform</div>
+    </section>
+</body>
+</html>

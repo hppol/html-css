@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        *{
+            margin-right: 20px;
+        }
+        body{
+            /* 1920*1080: 기본적인 화면 해상도 사이즈 */
+            background-color: peachpuff;
+            width: 2000px;
+            height: 2000px;
+            overflow-x: hidden; /* x축 내용물을 어떻게 보일지 결정 */
+            overflow-y: hidden; /* y축 내용물을 어떻게 보일지 결정 */
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            float: left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            float: left;
+        }
+        .box3{
+            width: 200px;
+            /* height: 200px; */
+            border: 1px solid;
+            float: left;
+            overflow: hidden; /* 영역을 벗어나는 부분을 안 보이게 처리
+            height 존재하지 않을 때 높이를 대신 */
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+            float: left;
+            /* overflow: hidden; 폭값이 존재할 때 안보이게 처리 */
+            overflow: scroll; /* 스크롤 처리 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h3>이상적인 상황</h3>
+        <p>
+            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </p>
+    </div>
+    <div class="box2">
+        <h3>별로인 상황</h3>
+        <p>
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+        </p>
+    </div>
+    <div class="box3">
+        <h3>해결방법1</h3>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+        </p>
+    </div>
+    <div class="box4">
+        <h3>해결방법2</h3>
+        <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+        </p>
+    </div>
+
+</body>
+</html>

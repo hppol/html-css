@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상태선택자</title>
+    <style>
+        input:focus{
+            /* :focus input에 초점이 맞춰진 상태 */
+            background-color: thistle;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+        input[type="checkbox"]:checked+div{
+            /* :checked input에 check가 된 상태
+            (동위선택자 활용 (checkbox 뒤에 div를 선택하겠다)) */
+            background-color: deeppink;
+        }
+        /* 시작문자선택자 */
+        p::first-letter{
+            /* 특정한 선택자에 첫번째 글자를 선택 */
+            font-size: 50px;
+            color: brown;
+        }
+        p::first-line{
+            /* 특정한 선택자에 첫번째 라인을 선택 */
+            background-color: gold;
+        }
+        /* 가상요소선택자 */
+        h1::before{
+            /* ::before 특정 요소의 앞에 삽입 */
+            content: "front>";
+            color: lightcoral;
+        }
+        h1::after{
+            /* ::after 특정 요소의 뒤에 삽입 */
+            content: "<back";
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        상태선택자: 마우스의 반응에 따른 상태를 선택
+
+     -->
+     <input type="text"><br><br><br>
+     <input type="checkbox">
+     <div>
+        <h1>What is Lorem Ipsum?</h1>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+     </div>
+
+</body>
+</html>

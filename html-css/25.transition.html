@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        section{
+            width: 700px;
+            overflow: hidden;
+            padding: 30px;
+            border: 3px solid;
+            margin: 150px auto;
+        }
+        .line{
+            width: 30px;
+            height: 30px;
+            background-color: khaki;
+            margin: 10px 0px;
+            /* 동작구현에 대한 시간 값 */
+            transition-duration: 1s;
+        }
+        section:hover .line{
+            width: 700px;
+        }
+        .line:nth-child(1){
+            background-color: aqua;
+            /* 지연시간 후에 */
+            /* transition-delay: 3s; */
+            /* 시간에 따른 움직이는 속도의 값-일정한 속도 ease(기본값) */
+            transition-timing-function: linear;
+        }
+        .line:nth-child(2){
+            background-color: blueviolet;
+            /* 속도의 시작이 느리게 */
+            transition-timing-function: ease-in;
+        }
+        .line:nth-child(3){
+            background-color: chartreuse;
+            /* 속도를 느리게 끝 */
+            transition-timing-function: ease-out;
+        }
+        .line:nth-child(4){
+            background-color: crimson;
+            /* 느리게 시작 느리게 끝 */
+            transition-timing-function: ease-in-out;
+        }
+        .line:nth-child(5){
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </section>
+</body>
+</html>

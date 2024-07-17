@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조선택자</title>
+    <style>
+        li{
+            list-style: none;
+            float: left;
+            padding: 10px;
+        }
+        li:first-child{
+            /* 같은 부모아래에서 형제관계의 첫번째에 해당하는 요소를 선택 */
+            background-color: darkkhaki;
+        }
+        li:last-child{
+            /* 같은 부모아래에서 형제관계의 마지막에 해당하는 요소를 선택*/
+            background-color: goldenrod;
+        }
+        li:nth-child(2){
+            /* 형제관계의 n번째에 위치하는 요소를 선택(1,2,3), 2n+1(홀수) */
+            background-color: darkolivegreen;
+        }
+        li:nth-child(2n+1){
+            color: deeppink;
+        }
+        li:nth-last-child(1){
+            /* 형제관계의 뒤에서 n번째에 위치하는 요소를 선택 */
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 구조선택자
+    부모의 요소 안에서 특정한 위치의 요소를 선택할 때 사용 -->
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+    </ul>
+
+    <!-- 형태구조선택자
+    :first-of-type = 부모박스 안에서 형제관계 중에 첫번째에 위치하는 태그
+    :last-of-type = 부모박스 안에서 형제관계 중에 마지막에 위치하는 태그
+    :nth-of-type(n) = 부모박스 안에서 형제관계 중에 n번째에 위치하는 태그
+    :nth-last-of-type = 부모박스 안에서 형제관계 중에 뒤에서 n번째에 위치하는 태그 -->
+</body>
+</html>

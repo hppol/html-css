@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table, td{
+            border: 2px solid black;
+            width: 200px;
+            height: 50px;
+        }
+        table{
+            /* border-collapse: collapse; table과 td사이의 선값의 결합 유무를 결정하는 속성 seperate(기본값) */
+            /* border-spacing: 20px 40px; 테두리와 셀들의 간격을 지정 */
+        }
+        td{
+            /* 수직에 대한 정렬 middle(기본값), top, bottom */
+            /* vertical-align: bottom; */
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 표 태그
+    table> tr(행)> td(열) -->
+    <table>
+        <!-- caption: 표 정의 -->
+        <caption>table 제목</caption>
+        <tr>
+            <!-- th: table head
+            text-align:center, font-weight:bold로 나타남 -->
+            <th>table1</th>
+            <th>table2</th>
+        </tr>
+        <tr>
+            <td>table3</td>
+            <td>table4</td>
+        </tr>
+        <tr>
+            <td>table5</td>
+            <td>table6</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <!-- table의 병합
+    colspan="n" 가로의 병합
+    rowspan="n" 세로의 병합 -->
+    <table>
+        <tr>
+            <td colspan="3">1</td>
+            <!-- <td>2</td> -->
+            <!-- <td>3</td> -->
+            <td>4</td>
+        </tr>
+        <tr>
+            <td rowspan="3">5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <!-- <td>9</td> -->
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <!-- <td>13</td> -->
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+    </table>
+    <br><br><br>
+
+    <!-- thead, tbody, tfoot으로도 표의 구조를 묶을 수 있다 -->
+    <table>
+        <thead>
+            <tr>
+                <th>table상단</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>table내용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>table하단</td>
+        </tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        input[type="text"]{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <!-- 웹페이지에서의 입력 양식의 그룹/ 원하는 정보를 연결하여 전달받기 위한 명확한 폼양식
+    name = 폼의 이름, 식별하기 위한 이름을 지정
+    method = 폼을 서버로 전송할 때 메소드를 지정(=전송방식)
+    get = 주소표시줄에 사용자가 입력한 내용이 그대로 표시
+    post = 대부분이 사용하는 방식, 내부적으로 보이지 않게 전송 -->
+    <form action="">
+        <!-- fieldset 특정한 엘리멘트끼리 그룹화
+            legend fieldset 안에서 정의를 부여
+            label 해당 서식의 내용, 용도
+            input type = "속성" name = "이름" -->
+        <fieldset>
+            <legend>개인정보작성</legend>
+            <label for="">id</label>
+            <!-- 아이디 입력양식 -->
+            <input type="text" name="id">
+            <!-- 비밀번호 입력양식 -->
+            <label for="">password</label>
+            <input type="password" name="pwd">
+        </fieldset>
+        <br><br><br>
+        <!-- 전화번호 입력양식, placeholder 예시를 보여줄때 사용(회색으로 보임) -->
+        <input type="tel" placeholder="010-1234-5678" name="tel">
+        <br><br><br>
+        <!-- 체크박스 다중선택 -->
+        <input type="checkbox" name="chckbx">
+        <!-- 라디오버튼 당일항목선택 -->
+        <input type="radio" name="rad">
+        <br><br><br>
+        <!-- 제출 submit, 회수 reset -->
+        <input type="submit" value="확인" name="btn">
+        <input type="reset" value="취소" name="btn">
+        <br><br><br>
+        <!-- 셀렉트박스: 항목고르는 서식 -->
+        <select name="" id="">
+            <option value="">항목1</option>
+            <option value="">항목2</option>
+            <option value="">항목3</option>
+        </select>
+    </form>
+</body>
+</html>

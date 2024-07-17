@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자</title>
+    <style>
+        input[type="text"]{
+            background-color: lightsteelblue;
+        }
+        img[src$="png"]{
+            border: 3px solid black;
+            /* png 이미지 보더값 생김 */
+        }
+        div[class*="box"]{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 속성선택자
+    특정한 속성이나 특정한 속성값을 가지고 있는 html요소를 선택
+    [속성이름="속성값"]
+    [속성이름$="속성값"]
+    [속성이름*="속성값"] -->
+    <input type="text"><br><br><br>
+    <div class="box">
+        <img src="예를들어.png" alt="예를들어.png">
+        <img src="예를들어.jpg" alt="예를들어.jpg">
+        <img src="예를들어.gif" alt="예를들어.gif">
+    </div>
+</body>
+</html>
